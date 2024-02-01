@@ -1,19 +1,18 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #f9a1bc;
   --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Poppins", sans-serif;
+  --default-font-family: "Caveat", cursive;
 }
 
 body {
   font-family: var(--default-font-family);
+  background: #fefaec;
 }
 
-h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
   color: black;
   font-family: var(--heading-font-family);
@@ -21,7 +20,8 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
+  font-family: "Pacifico", cursive;
+  font-size: 100px;
   line-height: 1.5;
 }
 
@@ -34,31 +34,41 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-family: "Pacifico", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f9a1bc;
+}
+
 p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
+  font-family: var(--heading-font-family);
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: #fefaec;
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero p {
-  font-size: 36px;
+  font-size: 45px;
+  margin-bottom: 20px;
   font-weight: bold;
-  margin: 0;
-  color: #272142;
+  color: black;
+  font-family: var(--default-font-family);
 }
 
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: normal;
   line-height: 1.5;
-  font-size: 24px;
-  color: #272142;
+  font-size: 45px;
+  color: black;
 }
 
 .content-container {
@@ -71,7 +81,7 @@ p {
 }
 
 .content h2 {
-  font-size: 18px;
+  font-size: 25px;
   font-family: var(--default-font-family);
 }
 
@@ -91,12 +101,12 @@ p {
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: #f9a1bc;
   border-radius: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font-family);
   font-style: normal;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 27px;
   padding: 18px 30px;
 }
@@ -108,6 +118,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 25px;
+  font-family: var(--heading-font-family);
 }
 
 .project-description {
@@ -132,18 +143,24 @@ nav li {
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 nav a {
   text-decoration: none;
   color: #272142;
   transition: all 100ms ease-in-out;
+  font-family: "Pacifico", cursive;
 }
 
 nav a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: #f9a1bc;
+}
+
+img {
+  max-width: 100px;
+  border-radius: 10px;
 }
 
 footer {
@@ -155,7 +172,7 @@ footer .contact-box p {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background: #fefaec;
   padding: 30px 120px;
   border: 10px;
 }
@@ -163,7 +180,8 @@ footer .contact-box {
 footer .email-link {
   text-decoration: none;
   color: black;
-  font-size: 24px;
+  font-size: 25px;
+  font-family: var(--heading-font-family);
 }
 
 footer .email-link:hover {
@@ -183,6 +201,28 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+footer h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer p a {
+  color: var(--branding-color);
+}
+
+.links {
+  color: #f9a1bc;
+}
+
+h3.link-name {
+  font-family: sans-serif;
 }
 
 @media (max-width: 900px) {
